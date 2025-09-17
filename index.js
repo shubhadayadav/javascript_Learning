@@ -1,6 +1,6 @@
 // Write code below 💖
 
-let hour = 5;
+let hour = 15;
 if (hour <= 12) {
   console.log(`Good morning it's ${hour} o'clock`);
 } else if (hour < 18 && hour >= 13) {
