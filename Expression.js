@@ -13,12 +13,19 @@ let age = 5;
 let drivingLicense = true;
 // Using if-else
 if (age >= 18 && drivingLicense === true) {
-    console.log("you can drive");
+  console.log("you can drive");
 } else {
-    console.log("you can not drive");
+  console.log("you can not drive");
 }
 
 // Using Ternary operator
-age >= 18 && drivingLicense === true ?
-    console.log("you can drive") :
-    console.log("you can not drive");
+// age >= 18 && drivingLicense === true ?
+//     console.log("you can drive") :
+//     console.log("you can not drive");
+
+console.log(2 < 12 < 5);
+
+console.log(12 > 10 > 8);
+
+console.log(0 < 5 < 10);
+console.log(81 < 45 > 21);
