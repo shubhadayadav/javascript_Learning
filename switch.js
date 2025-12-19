@@ -86,3 +86,47 @@ switch (arithMatic) {
 
     break;
 }
+
+let dietPlan = prompt("Enter the Day :");
+
+switch (dietPlan) {
+  case "monday":
+    console.log(
+      "Breakfast:  2 Moong Dal Chillas with Mint Chutney\n Lunch: 1 Roti, Mixed Veg Curry, Sprout Salad\n Dinner: Clear Vegetable Soup, Grilled Paneer(100 g)"
+    );
+    break;
+  case "tuesday":
+    console.log(
+      " Breakfast: Scrambled Eggs with Spinach & 1 whole-grain toast\n Lunch: Chicken/Fish Curry with Brown Rice & Salad\n Dinner: Chicken Stew with Sautéed Spinach."
+    );
+    break;
+  case "wednesday":
+    console.log(
+      "Breakfast: 1 Apple + 1 cup Watermelon (mid-morning)\n Lunch: Rajma Rice with Cucumber Salad\n Dinner: Paneer Tikka with Mixed Veggies."
+    );
+    break;
+  case "thursday":
+    console.log(
+      " Breakfast: Veggie Stuffed Paratha with Curd\n Lunch: 1 Roti, Chana Masala, Salad\n Dinner: Moong Dal Soup + Grilled Chicken."
+    );
+    break;
+  case "friday":
+    console.log(
+      " Smoothie (Banana, Spinach, Flaxseed, Almond Milk)\n Lunch: Grilled Fish with Sautéed Veggies\n Dinner: Chicken Biryani (light oil) + Salad."
+    );
+    break;
+  case "saturday":
+    console.log(
+      " Breakfast: Omelet with Onion & Tomato\nLunch: Millet Roti, Mixed Veg Curry, Sprout Salad\n Dinner: Vegetable Soup + 1 Boiled Egg."
+    );
+    break;
+  case "sunday":
+    console.log(
+      " Breakfast: 1 bowl Poha with peanuts & lemon\n Lunch: Leftover Chicken/Veg Curry with Roti/Rice\n Dinner: Chicken/Fish Tikka with Sautéed Veggies."
+    );
+    break;
+  default:
+    console.log(" not match");
+
+    break;
+}
