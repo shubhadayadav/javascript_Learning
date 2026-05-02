@@ -1,15 +1,194 @@
-const isReverse = (char) => {
-    let printChar = "";
-    for (let i = char.length - 1; i >= 0; i--) {
-        // printChar = i;
-        printChar += char[i];
-    }
-    // console.log(printChar.length);
-    console.log(char.length);
-    console.log(printChar.length);
+// const isReverse = (char) => {
+//   let printChar = "";
+//   for (let i = char.length - 1; i >= 0; i--) {
+//     // printChar = i;
+//     printChar += char[i];
+//   }
+//   // console.log(printChar.length);
+//   console.log(char.length);
+//   console.log(printChar.length);
 
-    return char == printChar ? true : false;
+//   return char == printChar ? true : false;
+// };
+
+// console.log(isReverse("Hello World"));
+// console.log(isReverse("MADAM"));
+
+const reverseName = (Uname) => {
+  let fullName = "";
+  for (let i = Uname.length - 1; i >= 0; i--) {
+    fullName += Uname[i];
+  }
+  //   return fullName;
+
+  // Here We can check Palindrome
+
+  return Uname === fullName ? true : false;
 };
 
-console.log(isReverse("Hello World"));
-console.log(isReverse("MADAM"));
+console.log(reverseName("radar"));
+
+let person = ["shubhada", "Amit", "Urmila", "Apple", " Banana", " Grapes"];
+
+// console.log(person[3]);
+//How to Get reverse Array ?
+// console.log(person.at(-4));
+
+// let lastChar = person[person.length - 2];
+// console.log(lastChar);
+
+// How  we can Modify Existing Array
+// person[5] = "mango";
+// person[3] = "12457";
+// console.log(person);
+
+// console.log(typeof person);
+
+// console.log(person[2]);
+
+// for (const persons of person) {
+//   console.log(persons);
+// }
+
+let Cars = ["BMW", "Mercedes", "VW", "TaTa", "porsche"];
+
+//Accessing Array using Function
+
+// let allPerson = (person) => {
+//   let element = " ";
+//   for (let index = 0; index <= person.length - 1; index++) {
+//     element += person[index];
+//   }
+//   return element;
+// };
+// console.log(allPerson(Cars));
+
+//Accessing Cars Or Any Array,  using for Loop
+// for (let i = 0; i <= person.length - 1; i++) {
+//   console.log(person[i]);
+// }
+
+// for (let nameofCars of Cars) {
+//   console.log(nameofCars);
+// }
+
+// for (let allcars in Cars) {
+//   console.log(allcars);
+// }
+
+// let myFruit = (fruitName) => {
+//   return ` I Eat ${fruitName}`;
+// };
+
+// console.log(myFruit("apple"));
+
+// function myFruit1(fruitName1) {
+//   return ` I Eat ${fruitName1}`;
+// }
+
+// console.log(myFruit1("apple"));
+
+//FOREACH LOOP START FROM HERE
+
+// let person2 = ["ram", "sunita", "prince", "I-An", "wamiqa"];
+
+// let allPerson2 = person2.forEach((element) => {
+//   console.log(`My Name is ${element}`);
+// });
+
+// console.log(allPerson2);
+
+// let mapPerson = person2.map((element1) => {
+//   return ` ${element1} is a Good `;
+// });
+// console.log(mapPerson);
+
+// let allnum = [7, 2, 5, 8, 4, 9];
+
+// let Eachnum = allnum.forEach((numEle) => {
+//   console.log(`${numEle}` * 2);
+// });
+// console.log(Eachnum);
+
+// let Mapnum = allnum.map((mapEle) => {
+//   return `${mapEle}  ` * 2;
+// });
+// console.log(Mapnum);
+
+// allnum[5] = 15;
+
+// console.log(allnum);
+
+const allFruits = [
+  "Apple",
+  "Banana",
+  "Orange",
+  "Mango",
+  "Grape",
+  "Strawberry",
+  "Pineapple",
+];
+
+// for (const curFruit of allFruits) {
+//   console.log(curFruit);
+// }
+
+// let fruitName = allFruits.forEach((currentval, ind) => {
+//   console.log(`  ${currentval} ${ind}`);
+// });
+
+// console.log(fruitName);
+
+// let fruitName2 = allFruits.map((currentvalue) => {
+//   return ` My Fruit ${currentvalue} `;
+// });
+
+// console.log(fruitName2);
+
+// allFruits[5] = "kiwi";
+// console.log(allFruits);
+
+//CRUD method start from here
+//1. how to add and remove elements in the array
+
+//  at the end {i) Push() Method.  ii} pop() }  at the beginning {iii} unshift()    iv}shift()}
+
+// allFruits.push("guava", "watermelon", "carrot");
+// console.log(allFruits);
+// console.log(allFruits.push()); //IN push method Push return Length
+
+// allFruits.pop();
+// console.log(removeFruit);
+// console.log(allFruits.pop());
+
+// allFruits.unshift("potato", "tomato");
+// console.log(allFruits);
+// console.log(allFruits.unshift());
+
+// console.log(allFruits.shift());
+
+//2. how to  add/replace or delete element in array (the middle element)
+// splice() method
+
+const allFruits1 = [
+  "Apple",
+  "Banana",
+  "Orange",
+  "Mango",
+  "Grape",
+  "Strawberry",
+  "Pineapple",
+];
+
+// //splice(starting index number,delete count , add new 1, add new 2 ,...)
+//splice method Return An Empty Array []
+
+// allFruits1.splice(2, 3, "kiwi", "carrot", "potato", "tomato");
+// console.log(allFruits1);
+
+allFruits1.splice(4, 1);
+console.log(allFruits1);
+console.log(allFruits1.splice());
+
+const position = 2;
+getItem([1, 2, 4, 1], position);
