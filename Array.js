@@ -120,13 +120,13 @@ let Cars = ["BMW", "Mercedes", "VW", "TaTa", "porsche"];
 // console.log(allnum);
 
 const allFruits = [
-    "Apple",
-    "Banana",
-    "Orange",
-    "Mango",
-    "Grape",
-    "Strawberry",
-    "Pineapple",
+  "Apple",
+  "Banana",
+  "Orange",
+  "Mango",
+  "Grape",
+  "Strawberry",
+  "Pineapple",
 ];
 
 // for (const curFruit of allFruits) {
@@ -203,15 +203,15 @@ const allFruits = [
 let multi = [1, 2, 3, 5, 6, 7];
 
 let totalOfMultiplication = multi.forEach((currval) => {
-    console.log(currval * 2);
-    // perform an action on each element of existing array and modify the existing array
+  console.log(currval * 2);
+  // perform an action on each element of existing array and modify the existing array
 });
 
 console.log(totalOfMultiplication);
 
 let totalMap = multi.map((curval) => {
-    return curval * 3;
-    // create a new array with modification on existing array (not change existing array)
+  return curval * 3;
+  // create a new array with modification on existing array (not change existing array)
 });
 console.log(totalMap);
 
@@ -221,7 +221,7 @@ let colors = ["Red", "Yellow", "pink", "purple", "Green", "white"];
 
 // ADD ELEMENTS END OF THE ARRAY USING PUSH METHOD
 let addColors = colors.push("INDIGO");
-This is the method 1 or
+// This is the method 1 or
 console.log(addColors);
 console.log(colors);
 
@@ -234,8 +234,6 @@ console.log(colors);
 console.log(colors.pop());
 console.log(colors);
 
-// ADDING NEW ELEMENT BEGINNING OF AN ARRAY
-
 // IMP** unshift and push method returns ARRAY'S NEW LENGTH
 // and SHIFT ,POP METHOD REMOVE ELEMENTS AND RETURNS VALUE WHICH ELEMENT THEY REMOVE
 
@@ -245,6 +243,9 @@ console.log(colors);
 // console.log(colors.shift());
 // console.log(colors);
 
-// ** **  CREATE : PUSH AND UNSHIFT METHOD
-// UPDATE : SPLICE METHOD
-// DELETE : SHIFT AND POP METHOD
+// ** **  CREATE : PUSH AND UNSHIFT METHOD  (return new lenght)
+// UPDATE : SPLICE METHOD ( return An array containing the elements that were deleted. )
+// DELETE : SHIFT AND POP METHOD (return deleted element)
+
+console.log(colors.splice(2, 1, "New class", "breakfast"));
+console.log(colors);
